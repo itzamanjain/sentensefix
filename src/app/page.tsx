@@ -25,20 +25,19 @@ export default function Home() {
         placeholder="Enter your text here"
         value={inputText}
         onChange={handleInputChange}
-        className="w-1/2 rounded-lg p-2 text-black bg-white h-[150px] m-2  border border-gray-300 focus:outline-none focus:ring-2 focus:ring-yellow-500"
-        
+        className="w-full md:w-1/2 rounded-lg p-2 text-black bg-white h-[150px] m-2 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-yellow-500"
+        style={{ resize: 'none' }}
       />
 
       <button
         onClick={handleCorrection}
-        className="bg-yellow-700 hover:bg-[#e2cbb9] text-white font-bold p-4 rounded mt-4 shadow-lg"
-        
+        className="bg-yellow-700 hover:bg-[#e2cbb9] text-white font-bold p-4 rounded mt-4 shadow-lg w-full md:w-auto"
       >
         Correct Grammar
       </button>
 
       {correctedText && (
-        <div className="mt-4 p-4 text-black bg-white border border-gray-300 rounded-xl w-1/2 shadow-lg"
+        <div className="mt-4 p-4 text-black bg-white border border-gray-300 rounded-xl w-full md:w-1/2 shadow-lg"
           style={{ backdropFilter: 'blur(10px)', backgroundColor: 'rgba(255, 255, 255, 0.15)' }}
         >
           <h2 className="text-lg font-bold mb-2">Corrected Text:</h2>
