@@ -6,7 +6,7 @@ export default function Home() {
   const [inputText, setInputText] = useState('');
   const [correctedText, setCorrectedText] = useState('');
 
-  const handleInputChange = (event) => {
+  const handleInputChange = (event:any) => {
     setInputText(event.target.value);
   };
 
